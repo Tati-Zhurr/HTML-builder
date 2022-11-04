@@ -29,6 +29,7 @@ const folderPath = path.join(__dirname, 'files');
     }
 
   }
+  console.log('All files from folder "files" were copied to the folder "files-copy"');
 } catch (err) {
   console.error(err);
 }
