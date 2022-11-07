@@ -8,12 +8,12 @@ fs.writeFile(pathText,
   '',
  (err) =>{
    if (err) throw err;
-   console.log('Write your text below');
+   console.log('Write your text below, please');
  }
 );
 
 process.on('SIGINT', () => {
-  console.log('Thank you. Have a nice day.');
+  console.log('Thanks, have a nice day!');
   process.exit();
 });
 
