@@ -1,11 +1,11 @@
 const fs = require('fs');
 const path = require('path');
-const pathFolder = path.join(__dirname, 'files-copy');
+const pathFolderCopy = path.join(__dirname, 'files-copy');
 
 
 //create folder
 (async ()=> {
-    fs.mkdir(pathFolder, { recursive: true }, err =>{
+    fs.mkdir(pathFolderCopy, { recursive: true }, err =>{
         if (err) {
             throw err;
         }
