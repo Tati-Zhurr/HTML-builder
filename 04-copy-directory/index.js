@@ -2,17 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const pathFolderCopy = path.join(__dirname, 'files-copy');
 
-
-//delete folder
-/*(async ()=> {
-    fs.rm(pathFolderCopy, { recursive: true, force: true }, err =>{
-        if (err) {
-            throw err;
-        }
-    })
-    
-})();*/
-
 //create folder
 (async ()=> {
     fs.mkdir(pathFolderCopy, { recursive: true }, err =>{
@@ -38,7 +27,6 @@ const pathFolderCopy = path.join(__dirname, 'files-copy');
                 }
             }
         }
-       
         } catch (err) {
           console.error(err);
           }
